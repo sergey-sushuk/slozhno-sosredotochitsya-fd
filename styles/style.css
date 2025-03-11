@@ -302,7 +302,7 @@ a:hover {
 }
 
 .recomed-concentrate article:not(:last-child) p {
-  padding-block-end: 17px;
+  padding-block-end: 18px;
 }
 
 .title {
@@ -470,6 +470,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content 1fr;
     align-items: start;
+    padding-block-end: 59px;
 }
 
 main {
