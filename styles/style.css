@@ -289,12 +289,12 @@ a:hover {
 }
 
 .header {
+  min-block-size: 1024px;
+  block-size: 100vh;
     display: grid;
-    min-height: 1024px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content 1fr;
     align-items: center;
-
     padding: 0 -8px;
     padding-block-end: 56px;
 }
@@ -458,10 +458,11 @@ footer {
 }
 
 .header {
+  min-block-size: 768px;
+  block-size: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content 1fr;
-    min-height: 768px;
     align-items: start;
 }
 
