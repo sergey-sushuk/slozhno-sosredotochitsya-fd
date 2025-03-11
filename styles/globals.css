@@ -6,11 +6,18 @@
   box-sizing: border-box;
 }
 
+html{
+margin: 0;
+padding: 0;}
+
+
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
 }
+
+
 
 h1,
 h2,
@@ -20,6 +27,7 @@ h5,
 h6,
 p {
   margin: 0;
+ 
 }
 
 ul {
@@ -33,6 +41,8 @@ picture {
   padding: 0;
 }
 
+
+  
 button,
 a {
   color: currentColor;

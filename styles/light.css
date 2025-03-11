@@ -8,9 +8,149 @@
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
+
   */
+
+  --title-color: rgba(255, 194, 230, 1);
+  --accent-color: rgba(255, 141, 203, 1);
+  --main-text:rgba(53, 52, 48, 1);
+  --bg-image: url(../images/cover-image-light.png); 
+  
+    
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image:var(--bg-image);
+  }
+
+.theme-light .record {
+  display: none;
+} 
+
+.theme-light .decorated-zone::after {
+  position: absolute;
+  content: "";
+  justify-self: end;
+  width: 22px;
+  height: 22px;
+  top: 21px;
+  border-top: 1px solid var(--main-text);
+  border-right: 2px solid var(--main-text);
 }
+
+.theme-light .decorated-zone::before {
+  position: absolute;
+  content: "";
+  justify-self: start;
+  width: 22px;
+  height: 22px;
+  bottom: 76px;
+  left: 18px;
+  border-bottom: 1px solid var(--main-text);
+  border-left: 1px solid var(--main-text);
+}
+
+.theme-light.header__theme-menu-button {
+  color: var(--main-text);
+}
+
+.theme-light .header__theme-menu-button_active {
+  border: 1px solid var(--main-text);
+} 
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4)
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--main-text);
+}
+
+.theme-light a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  text-shadow: 2px 2px 0px var(--title-color);
+}
+
+.theme-light a:focus-visible {
+  outline: none;
+  border: 1px solid var(--title-color);
+}
+
+.theme-light a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--title-color);
+}
+
+.theme-light .header__theme-menu-button {
+color: var(--main-text);}
+
+@media(prefers-color-scheme:light){
+  :root{
+  --title-color: rgba(255, 194, 230, 1);
+  --accent-color: rgba(255, 141, 203, 1);
+  --main-text:rgba(53, 52, 48, 1);
+  --bg-image: url(../images/cover-image-light.png);
+} 
+
+.page {
+    /* Вам также нужно будет написать ряд подобных селекторов */
+    background-image:var(--bg-image);
+}
+
+.record {
+  display: none;
+}
+
+.decorated-zone::before {
+  border-bottom: 1px solid var(--main-text);
+  border-left: 1px solid  var(--main-text);
+}
+
+.decorated-zone::after {
+  border-top: 1px solid   var(--main-text);
+  border-right: 2px solid   var(--main-text);
+}
+    
+.footer::after {
+  border-top: 1px solid  var(--main-text);
+  border-right: 1px solid   var(--main-text);
+}
+    
+.footer::before {
+  border-bottom: 1px solid   var(--main-text);
+  border-left: 1px solid   var(--main-text);
+}
+
+a {
+  color:var( --main-text);
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+    
+a:focus-visible {
+  border: 1px solid var(--main-text);
+}
+    
+a:hover {
+  text-decoration-color: var(--main-text);
+}
+
+.header__theme-menu-button {
+  color: var(--main-text);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--main-text);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(53, 52, 48, 0.4);
+}
+    
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-text);
+}
+}
+   
