@@ -17,7 +17,7 @@
   grid-template-rows: 1fr min-content 1fr;
   min-block-size: 668px;
   block-size: 100vh;
-  padding-block-end: 35px;
+  padding-block-end: 38px;
   align-items: center;
 }
 
@@ -63,12 +63,13 @@
   line-height: 23.4px;
   letter-spacing: 0%;
   font-weight: var(--weight-bold);
+  margin-block-start: 0.6px;
 }
 
 .title-header-decor {
-  margin-block-end: 69px;
-  margin-block-start: 55px;
-  margin-inline-end: 4px;
+  margin-block-end: 61px;
+  margin-block-start: 51px;
+  margin-inline-end: 1px;
 }
 
 .main-title {
@@ -108,7 +109,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
-  margin-block-start: 46px;
+  margin-block-start: 50px;
 }
 
 img {
@@ -174,7 +175,7 @@ footer {
   grid-template-rows: min-content 1fr min-content;
   gap: 18px;
   padding-block-start: 3px;
-  margin-block-end: 32px;
+  margin-block-end: 29px;
 }
 
 .footer::after {
@@ -271,7 +272,7 @@ a:hover {
 }
 
 .recomed-concentrate article:not(:last-child) p {
-  padding-block-end: 18px;
+  padding-block-end: 16px;
 }
 
 .recomed-concentrate .text-decor {
@@ -297,6 +298,10 @@ a:hover {
     align-items: center;
     padding: 0 -8px;
     padding-block-end: 56px;
+}
+
+.recomed-concentrate article:not(:last-child) p {
+  padding-block-end: 17px;
 }
 
 .title {
@@ -351,7 +356,7 @@ main {
 }
 
 .gadjets {
-    padding-block-end: 77px;
+    padding-block-end: 78px;
 }
 
 .image {
