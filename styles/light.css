@@ -10,14 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
 
   */
-
   --title-color: rgba(255, 194, 230, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --main-text:rgba(53, 52, 48, 1);
   --bg-image: url(../images/cover-image-light.png); 
-  
-    
-}
+  }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
@@ -100,10 +97,11 @@
 }
 
 .theme-light .header__theme-menu-button {
-color: var(--main-text);}
+color: var(--main-text);
+}
 
-@media(prefers-color-scheme:light){
-  :root{
+@media(prefers-color-scheme:light) {
+  :root {
   --title-color: rgba(255, 194, 230, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --main-text:rgba(53, 52, 48, 1);
