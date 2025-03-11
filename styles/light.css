@@ -13,7 +13,7 @@
   --title-color: rgba(255, 194, 230, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --main-text:rgba(53, 52, 48, 1);
-  --bg-image: url(../images/cover-image-light.png); 
+  --bg-image: url(../images/cover-image-light.png);
   }
 
 .theme-light .page {

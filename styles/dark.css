@@ -93,7 +93,3 @@
 .theme-dark .header__theme-menu-button {
   color: var(--accent-color);
 }
-
-.theme-dark .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
-}
