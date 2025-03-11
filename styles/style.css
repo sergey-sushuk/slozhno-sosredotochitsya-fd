@@ -291,6 +291,7 @@ a:hover {
 
 .header {
     min-block-size: 1024px;
+    block-size: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content 1fr;
@@ -463,6 +464,7 @@ footer {
 
 .header {
     min-block-size: 768px;
+    block-size: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content 1fr;
