@@ -24,6 +24,21 @@
   background-image:var(--bg-image);
   }
 
+.theme-light .main-title {
+    color:var(--main-text);
+  }
+  
+.theme-light .main-text {
+    color:var(--main-text);
+    line-height: 23.5px;
+  }
+  
+.theme-light .text-decor {
+    background: var(--accent-color);
+    color: var(--title-decor-color);
+    
+  }
+
 .theme-light .record {
   display: none;
 } 
@@ -102,6 +117,10 @@ color: var(--main-text);}
 
 .record {
   display: none;
+}
+
+.main-title {
+  color:var(--main-text);
 }
 
 .decorated-zone::before {

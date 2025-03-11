@@ -78,6 +78,7 @@
   font-size: 18px;
   line-height: 23.4px;
   padding-block-end: 20px;
+  color:var(--accent-color);
 }
 
 .main-text {
@@ -86,11 +87,11 @@
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   line-height: 23.4px;
+  color:var(--main-text);
 }
 
 .text-decor {
   margin: 0;
-
   font-weight: var(--weight-normal);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
@@ -132,6 +133,7 @@ footer {
   list-style: none;
   padding-right: 3px;
 }
+
 .header__theme-menu-button {
   padding: 1px 12px;
   background: transparent;
@@ -149,6 +151,7 @@ footer {
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
 }
+
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
@@ -200,15 +203,16 @@ footer {
   top: 12px;
   right: 28px;
 }
+
 .record::before {
   content: "REC";
   color: var(--accent-color);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
 }
+
 .record::after {
   position: absolute;
-
   content: "•";
   color: var(--accent-color);
   font-family: IBM Plex Mono, sans-serif;
@@ -272,11 +276,13 @@ a:hover {
   margin-bottom: 2px;
 }
 
-.header__theme-menu-button{
-cursor: pointer;}
+.header__theme-menu-button {
+cursor: pointer;
+}
 
-.header__theme-menu-button_active{
-pointer-events: none;}
+.header__theme-menu-button_active {
+pointer-events: none;
+}
 
 @media (width >= 768px) {
   .header__theme-menu-list {
@@ -327,6 +333,7 @@ pointer-events: none;}
     margin-inline-end: 20px;
     margin-block-end: 74px;
   }
+
   main {
     display: grid;
     grid-template-columns: 236px 1fr;
@@ -335,6 +342,7 @@ pointer-events: none;}
 
     align-items: start;
   }
+
   .low-concentrate {
     display: grid;
     grid-column-start: 1;
@@ -416,6 +424,7 @@ pointer-events: none;}
     grid-row-start: 4;
     grid-row-end: 5;
   }
+
   footer {
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
@@ -435,6 +444,7 @@ pointer-events: none;}
     left: 20px;
     bottom: 76px;
   }
+
   .record {
     top: 21px;
     right: 48px;
@@ -442,7 +452,6 @@ pointer-events: none;}
 
   .footer::before {
     bottom: 22px;
-
     left: 20px;
   }
 
