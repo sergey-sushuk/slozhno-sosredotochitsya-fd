@@ -18,7 +18,7 @@ header {
   grid-template-rows: 1fr min-content 1fr;
   min-block-size: 668px;
   block-size: 100vh;
-  padding-block-end: 38px;
+  padding-block-end: 0px;
   align-items: center;
 }
 
@@ -39,7 +39,7 @@ header {
   justify-self: start;
   width: 22px;
   height: 22px;
-  bottom: 47px;
+  bottom: 10px;
   left: 0px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
@@ -64,12 +64,12 @@ header {
   line-height: 23.4px;
   letter-spacing: 0%;
   font-weight: var(--weight-bold);
-  margin-block-start: 0.6px;
+  margin-block-start: 0.px;
 }
 
 .title-header-decor {
-  margin-block-end: 61px;
-  margin-block-start: 51px;
+  margin-block-end: 49px;
+  margin-block-start: 39px;
   margin-inline-end: 1px;
 }
 
@@ -79,7 +79,8 @@ header {
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   line-height: 23.4px;
-  padding-block-end: 20px;
+  padding-block-start: 40px;
+  padding-block-end: 19px;
   color:var(--accent-color);
 }
 
@@ -175,8 +176,8 @@ footer {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   gap: 18px;
-  padding-block-start: 3px;
-  margin-block-end: 32px;
+  padding-block-start: 0px;
+  margin-block-end: -5px;
 }
 
 .footer::after {
@@ -252,7 +253,11 @@ a:hover {
 }
 
 .gadjets {
-  padding-block-end: 48px;
+  padding-block-end: 4px;
+}
+
+.low-concentrate {
+  margin-block-end: 5px;
 }
 
 .multitasking,
@@ -265,7 +270,7 @@ a:hover {
 .good-nutrition,
 .books {
   display: grid;
-  gap: 8px;
+  gap: 9px;
 }
 
 .recomend {
@@ -277,7 +282,7 @@ a:hover {
 }
 
 .recomed-concentrate .text-decor {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 @media (width >= 768px) {
@@ -285,6 +290,8 @@ a:hover {
     padding-block-start: 15px;
     padding-inline-end: 20px;
 }
+ 
+.main-title{padding-block-start: 2px;}
 
 .page {
     padding: 0;
@@ -298,7 +305,8 @@ a:hover {
     grid-template-rows: 1fr min-content 1fr;
     align-items: center;
     padding: 0 -8px;
-    padding-block-end: 59px;
+    padding-block-start: 2px;
+    margin-block-end: 61px;
 }
 
 .recomed-concentrate article:not(:last-child) p {
@@ -315,6 +323,7 @@ a:hover {
 }
 
 .header__theme-menu {
+    margin-block-end: 1px;
     grid-column-start: 4;
     grid-column-end: auto;
     grid-row-start: 1;
@@ -328,7 +337,7 @@ a:hover {
     grid-row-start: 3;
     grid-row-end: 4;
     margin-inline-end: 20px;
-    margin-block-end: 74px;
+    margin-block-end: 59px;
 }
 
 main {
@@ -349,7 +358,7 @@ main {
 .hard-concentrate {
     display: grid;
     gap: 18px;
-    padding-block-end: 27px;
+    padding-block-end: 67px;
 }
  
 .low-concentrate .main-text {
@@ -357,7 +366,7 @@ main {
 }
 
 .gadjets {
-    padding-block-end: 78px;
+    padding-block-end: 70px;
 }
 
 .image {
@@ -366,7 +375,7 @@ main {
     grid-template-rows: min-content 192px 230px 318px;
     gap: 20px;
     padding: 0px 19px;
-    margin-block-start: 80px;
+    margin-block-start: 82px;
 }
 
 .image .title-decor {
@@ -439,7 +448,7 @@ footer {
 
 .decorated-zone::before {
     left: 20px;
-    bottom: 76px;
+    bottom: 21px;
 }
 
 .record {
@@ -470,7 +479,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content 1fr;
     align-items: start;
-    padding-block-end: 59px;
+    padding-block-end: 2px;
+    margin-block-end: 59px;
 }
 
 main {
@@ -481,6 +491,10 @@ main {
 
 .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+.gadjets{
+  padding-block-end: 71px;
 }
 
 .title-header-decor {
@@ -507,7 +521,7 @@ main {
     width: 100%;
     justify-content: center;
     padding: 0;
-    padding-block-start: 5px;
+    padding-block-start: 19px;
     gap: 12px;
 }
 
@@ -521,7 +535,7 @@ main {
     grid-template-rows: min-content 260px 315px 433px;
     gap: 20px;
     padding: 0px 19px;
-    margin-block-start: 80px;
+    margin-block-start: 84px;
 }
 
 .footer {
