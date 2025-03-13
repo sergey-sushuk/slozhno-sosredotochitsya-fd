@@ -19,87 +19,55 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: #fff1f7;
   background-image:var(--bg-image);
-  }
-
-.theme-light .main-title {
+   .record {
+    display: none;
+  }  
+  .main-title
+   {
     color:var(--main-text);
   }
-  
-.theme-light .main-text {
-    color:var(--main-text);
-    line-height: 23.5px;
+  .decorated-zone::after {
+    border-top: 1px solid var(--main-text);
+    border-right: 1px solid var(--main-text);
   }
-  
-.theme-light .text-decor {
-    background: var(--accent-color);
-    color: var(--title-decor-color);
-    
+  .decorated-zone::before {
+    border-bottom: 1px solid var(--main-text);
+    border-left: 1px solid var(--main-text);
   }
 
-.theme-light .record {
-  display: none;
-} 
+  .header__theme-menu-button {
+    color: var(--main-text);
+  }
+  
+ .header__theme-menu-button_active {
+    border: 1px solid var(--main-text);
+  } 
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4)
+  }
+  
+  .header__theme-menu-button:focus-visible {
+   border-bottom: 1px solid var(--main-text);
+  }
+a {
+  
 
-.theme-light .decorated-zone::after {
-  position: absolute;
-  content: "";
-  justify-self: end;
-  width: 22px;
-  height: 22px;
-  top: 21px;
-  border-top: 1px solid var(--main-text);
-  border-right: 2px solid var(--main-text);
-}
+    text-shadow: 2px 2px 0px var(--title-color);
+  }
+  
+ a:focus-visible {
+ 
+    border: 1px solid var(--main-text);
+  }
+  
+  a:hover {
+ border-bottom:1px solid var(--main-text);
+  }
+  }
 
-.theme-light .decorated-zone::before {
-  position: absolute;
-  content: "";
-  justify-self: start;
-  width: 22px;
-  height: 22px;
-  bottom: 76px;
-  left: 18px;
-  border-bottom: 1px solid var(--main-text);
-  border-left: 1px solid var(--main-text);
-}
 
-.theme-light.header__theme-menu-button {
-  color: var(--main-text);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--main-text);
-} 
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4)
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid var(--main-text);
-}
-
-.theme-light a {
-  color: var(--light-text-color);
-  text-decoration: none;
-  text-shadow: 2px 2px 0px var(--title-color);
-}
-
-.theme-light a:focus-visible {
-  outline: none;
-  border: 1px solid var(--title-color);
-}
-
-.theme-light a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--title-color);
-}
-
-.theme-light .header__theme-menu-button {
-color: var(--main-text);
-}
 
 @media(prefers-color-scheme:light) {
   :root {
@@ -111,9 +79,54 @@ color: var(--main-text);
 
 .page {
     /* Вам также нужно будет написать ряд подобных селекторов */
+    background-color: #fff1f7;
     background-image:var(--bg-image);
-}
+    .record {
+     display: none;
+   }  
+   .main-title
+    {
+     color:var(--main-text);
+   }
+   .decorated-zone::after {
+     border-top: 1px solid var(--main-text);
+     border-right: 1px solid var(--main-text);
+   }
+   .decorated-zone::before {
+     border-bottom: 1px solid var(--main-text);
+     border-left: 1px solid var(--main-text);
+   }
+ 
+   .header__theme-menu-button {
+     color: var(--main-text);
+   }
+   
+  .header__theme-menu-button_active {
+     border: 1px solid var(--main-text);
+   } 
+   .header__theme-menu-button:hover {
+     border: 1px solid rgba(50, 49, 45, 0.4)
+   }
+   
+   .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--main-text);
+   }
+ a {
+    text-shadow: 2px 2px 0px var(--title-color);
+   }
+   
+  a:focus-visible {
+  
+     border: 1px solid var(--main-text);
+   }
+   
+   a:hover {
+  border-bottom:1px solid var(--main-text);
+   }
+   }
+ 
 
+/*
 .record {
   display: none;
 }
@@ -171,4 +184,4 @@ a:hover {
   border-bottom: 1px solid var(--main-text);
 }
 }
-   
+    */
