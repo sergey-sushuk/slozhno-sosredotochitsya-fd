@@ -16,7 +16,11 @@
 }
 
 .low-concentrate {
+  display: grid;
   padding-block-end: 10px;
+  margin-block-start: 51px;
+  margin-block-end: 39px;
+  gap: 1px;
 }
 
 .recomed-concentrate {
@@ -231,13 +235,6 @@ border-bottom: 1px solid var(--main-text);
 .gadjets {
   padding-block-start: 20px;
   padding-block-end: 3px;
-}
-
-.low-concentrate {
-  display: grid;
-  margin-block-start: 51px;
-  margin-block-end: 39px;
-  gap: 1px;
 }
 
 .multitasking,

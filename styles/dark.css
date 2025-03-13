@@ -14,24 +14,29 @@
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: var(--bg-image);
-  .main-title {
+  background-color: #000028;
+.main-title {
     color:var(--accent-color);
   }
-  .header__theme-menu-button {
-  color: var(--accent-color);}
-  .header__theme-menu-button_active {
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button_active {
     border: 1px solid var(--accent-color);
  }
  .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.4);
 } 
+
 .record {
   display: block;
   position: absolute;
  
 }
 
-a{
+a {
   text-shadow: 2px 2px 0px var(--accent-color);}
 .header__theme-menu-button:focus-visible {
 
@@ -50,82 +55,4 @@ a{
 a:hover {
   border-bottom:1px solid var(--main-text);
 }
-
 }
-
-/* .theme-dark .main-title {
-  color:var(--accent-color);
-}
-
-.theme-dark .main-text {
-  color:var(--main-text);
-  line-height: 23.5px;
-}
-
-.theme-dark .text-decor {
-  background: var(--accent-color);
-  color: var(--title-decor-color);
-  
-}
-
-.theme-dark .title-header-decor {
-  background: var(--accent-color);
-  color: var(--title-decor-color);
- }
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-  }
-
-.theme-dark  .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
-} 
-
-.theme-dark .header__theme-menu-button:focus-visible {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.theme-dark .decorated-zone::before {
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-}
-
-.theme-dark .decorated-zone::after {
-  border-top: 1px solid var(--accent-color);
-  border-right: 2px solid var(--accent-color);
-}
-
-.theme-dark .record {
-  display: block;
-  position: absolute;
- 
-}
-
-.theme-dark .footer::after {
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.theme-dark .footer::before {
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-}
-.theme-dark a {
-  color:var( --main-text);
-  text-shadow: 2px 2px 0px var(--accent-color);
-}
-
-.theme-dark a:focus-visible {
-  border: 1px solid var(--main-text);
-}
-
-.theme-dark a:hover {
-  text-decoration-color: var(--main-text);
-}
-
-.theme-dark .header__theme-menu-button {
-  color: var(--accent-color);
-} */
