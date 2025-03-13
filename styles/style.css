@@ -1,9 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  margin: 0;
+  margin: 0 auto;
   display: grid;
-  background-color: #000028;
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
@@ -11,23 +11,19 @@
   background-repeat: no-repeat;
   padding: 0 10px;
 }
+
 .dopamine {
   margin-block-start: 21px;
 }
 
 .low-concentrate {
   display: grid;
-  padding-block-end: 10px;
-  margin-block-start: 51px;
-  margin-block-end: 39px;
+  margin-block-start: 29px;
+  margin-block-end: 30px;
   gap: 1px;
 }
 
-.recomed-concentrate {
-  padding-block-start: 0px;
-}
-
-header {
+.header {
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -67,13 +63,14 @@ header {
   color: var(--title-color);
   font-family: IBM Plex Mono, sans-serif;
   line-height: 95.7px;
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px rgb(255 0 112);
   font-weight: var(--weight-bold);
 }
 
 .title-decor {
   margin: 0;
-  background: var(--accent-color);
+  margin-block-end: 10px;
+  background: var(--accent-color-bg);
   color: var(--title-decor-color);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
@@ -101,6 +98,7 @@ header {
 
 .main-text {
   margin: 0;
+  padding-block-end: 20px;
   font-weight: var(--weight-normal);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
@@ -110,23 +108,29 @@ header {
 
 .text-decor {
   margin: 0;
+  margin-block-start: 0px;
   font-weight: var(--weight-normal);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   line-height: 23.4px;
-  background: var(--accent-color);
+  background: var(--accent-color-bg);
   color: var(--title-decor-color);
 }
 
 .footer-title {
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px rgb(255 0 112);
 }
 
 .image {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
-  margin-block-start: 50px;
+  margin-block-start: 27px;
+}
+
+.img-title {
+  margin-block-start: 1px;
+  margin-block-end: 0px;
 }
 
 img {
@@ -172,7 +176,7 @@ footer {
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--accent-color-hover);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -211,7 +215,7 @@ footer {
 a {
   text-decoration: none;
   color:var( --main-text);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var( --accent-color-bg);
 }
 
 a:focus-visible {
@@ -227,40 +231,14 @@ border-bottom: 1px solid var(--main-text);
   padding-block-end: 21px;
 }
 
-.food {
-  display: grid;
-  gap: 10px;
-}
-
-.gadjets {
-  padding-block-start: 20px;
-  padding-block-end: 3px;
-}
-
-.multitasking,
-.dopamine,
-.multitasking-low-conc,
-.gadjets,
-.sky,
-.music,
-.walk,
-.good-nutrition,
-.books {
-  display: grid;
-  gap: 9px;
-}
-
 .recomend {
   display: grid;
   margin-block-end: 19px;
 }
 
-.recomed-concentrate article:not(:last-child) p {
-  padding-block-end: 20px;
-}
-
 .recomed-concentrate .text-decor {
-  margin-bottom: 1px;
+  margin-block-end: 10px;
+  margin-block-start: 1px;
 }
 
 @media (width >= 768px) {
@@ -273,31 +251,32 @@ border-bottom: 1px solid var(--main-text);
   padding-block-start: 2px;
 }
 
+.main-text {
+  padding-block-end: 0;
+}
+
+.title-decor {
+  margin-block-end: 9px;
+}
+
 .page {
   padding: 0;
 }  
 
 .header {
   min-block-size: 1024px;
-  block-size: 100vh;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  align-items: center;
-  padding-block-start: 2px;
   margin-block-end: 59px;
+  padding: 0;
 }
 
-.recomed-concentrate article:not(:last-child) p {
-  padding-block-end: 0px;
+.recomed-concentrate {
+  margin-top: 79px;
 }
 
-.dopamine {
-  margin-block-start: 0px;
-}
-
-.low-concentrate article:not(:last-child) {
-  padding-block-end: 2px;
+.recomed-concentrate .text-decor {
+  margin-block-end: 9px;
 }
 
 .title {
@@ -315,6 +294,7 @@ border-bottom: 1px solid var(--main-text);
   grid-column-end: auto;
   grid-row-start: 1;
   grid-row-end: auto;
+  padding-block-end: 2px;
 }
 
 .title-header-decor {
@@ -324,7 +304,8 @@ border-bottom: 1px solid var(--main-text);
   grid-row-start: 3;
   grid-row-end: 4;
   margin-inline-end: 20px;
-  margin-block-end: 59px;
+  margin-block-start: 48px;
+  margin-block-end: 67px;
 }
 
 .section {
@@ -339,27 +320,22 @@ border-bottom: 1px solid var(--main-text);
    display: grid;
    grid-column-start: 1;
    grid-column-end: 3;
-   gap: 17px;
+   gap: 22px;
 }
 
 .card-content {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 3;
-  gap: 23px;
-}
-
-.gadjets {
-  padding-block-start: 2px;
-  padding-block-end: 39px;
+  gap: 22px;
 }
 
 .hard-concentrate {
-  padding-block-end: 28px;
+  padding-block-end: 48px;
 }
 
 .recomend {
-  margin-block-start: 3px;
+  margin-block-start: 1px;
   margin-block-end: 0;
 }
 
@@ -368,7 +344,6 @@ border-bottom: 1px solid var(--main-text);
 }
  
 .image {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content 192px 230px 318px;
   gap: 20px;
@@ -381,6 +356,7 @@ border-bottom: 1px solid var(--main-text);
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  margin-block-end: 0px;
 } 
 
 img {
@@ -430,13 +406,9 @@ img {
 } 
 
 footer {
-    display: grid;
-    grid-template-rows: 1fr min-content 1fr;
-    height: 100vh;
-    min-height: 1024px;
-    justify-content: center;
-    align-content: center;
-    margin-block-start: 60px;
+  grid-template-rows: 1fr min-content 1fr;
+  min-height: 1024px;
+  margin-block-start: 60px;
 }
 
 .decorated-zone::after {
@@ -457,29 +429,24 @@ footer {
 
 @media (width >= 1024px) {
 .header__theme-menu-item {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header {
   min-block-size: 768px;
-  block-size: 100vh;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   padding-block-end: 2px;
-  margin-block-end: 59px;
 }
 
 .title-header-decor {
-  display: grid;
   margin-block-start: 131px;
   margin-inline: 172px;
-  margin-inline-end: 20px;
+  margin-inline-end: 19px;
   grid-column-start: 2;
 }
 
 .section {
-  display: grid;
   grid-template-columns: 1fr 649px;
 }
 
@@ -488,7 +455,7 @@ footer {
 }
 
 .recomed-concentrate {
-  margin-block-start: 35px;
+  margin-block-start: 80px;
 }
 
 .card-title {
@@ -498,16 +465,9 @@ footer {
 }
 
 .card-content-low {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: start;
-}
-
-.gadjets {
-  display: grid;
-  grid-column-start: 3;
-  grid-row-start: 1;
 }
 
 .header__theme-menu-list {
@@ -530,9 +490,9 @@ footer {
   margin-block-start: 81px;
 }
 
-.footer {
+footer {
     min-height: 768px;
-    height: 100vh;
+  
 }
 }
 

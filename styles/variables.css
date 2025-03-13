@@ -5,11 +5,13 @@
 :root {
   --main-text:rgba(241, 178, 206, 1);
   --title-color: rgba(219, 0, 255, 1);
-  --accent-color: #ff0070;
+  --accent-color: rgb(255, 0, 112);
+  --accent-color-hover:rgb(255, 0, 112, 0.4);
+  --accent-color-bg:#ff0070;
   --bg-image: url('../images/cover-image-dark.png');
   --title-decor-color: rgba(0, 0, 40, 1);
   --text-size:18px;
   --weight-bold:700;
   --weight-normal:400;
-  --bg-color:rgba(0, 0, 40, 1);
+  --bg-color:#000028;
 }

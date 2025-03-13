@@ -9,52 +9,17 @@
  --accent-color: rgba(255, 0, 112, 1);
  --bg-image: url('../images/cover-image-dark.png');
  --main-text:rgba(241, 178, 206, 1);
+ --bg-color:#000028;
+ --accent-color-bg:#ff0070;
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: var(--bg-image);
-  background-color: #000028;
-.main-title {
-    color:var(--accent-color);
-  }
-
-.header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
- }
- .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
-} 
+  background-color: var(--bg-color);
 
 .record {
   display: block;
   position: absolute;
- 
-}
-
-a {
-  text-shadow: 2px 2px 0px var(--accent-color);
-}
-
-.header__theme-menu-button:focus-visible {
-
-  border-bottom: 1px solid var(--accent-color);
-}
-.decorated-zone::before {
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-}
-
-.decorated-zone::after {
-  border-top: 1px solid var(--accent-color);
-  border-right: 2px solid var(--accent-color);
-}
-
-a:hover {
-  border-bottom:1px solid var(--main-text);
 }
 }

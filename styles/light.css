@@ -10,122 +10,43 @@
     чем стили в медиазапросе предпочтений пользователя
 
   */
-  --title-color: rgba(255, 194, 230, 1);
-  --accent-color: rgba(255, 141, 203, 1);
-  --main-text:rgba(53, 52, 48, 1);
+  --accent-color:rgba(53, 52, 48, 1);
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color:rgba(255, 194, 230, 1);
+  --title-color: rgba(255, 194, 230, 1);
+  --bg-color: #fff1f7;
+  --main-text:rgba(53, 52, 48, 1);
+  --title-decor-color:rgba(53, 52, 48, 1);
+  --accent-color-bg:rgba(255, 141, 203, 1);
+  --accent-color-hover:rgba(53, 52, 48, 0.4);
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  background-color: #fff1f7;
   background-image:var(--bg-image);
 
 .record {
   display: none;
-} 
-
-.main-title {
-  color:var(--main-text);
-}
-
-.decorated-zone::after {
-  border-top: 1px solid var(--main-text);
-  border-right: 1px solid var(--main-text);
-}
-
-.decorated-zone::before {
-  border-bottom: 1px solid var(--main-text);
-  border-left: 1px solid var(--main-text);
-}
-
-.header__theme-menu-button {
-  color: var(--main-text);
-}
-  
-.header__theme-menu-button_active {
-  border: 1px solid var(--main-text);
-} 
-
-.header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4)
-}
-  
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--main-text);
-}
-
-a {
-  text-shadow: 2px 2px 0px var(--title-color);
-}
-  
-a:focus-visible {
-  border: 1px solid var(--main-text);
-}
-  
-a:hover {
- border-bottom:1px solid var(--main-text);
 }
 }
 
 @media(prefers-color-scheme:light) {
 :root {
- --title-color: rgba(255, 194, 230, 1);
- --accent-color: rgba(255, 141, 203, 1);
- --main-text:rgba(53, 52, 48, 1);
- --bg-image: url(../images/cover-image-light.png);
+  --accent-color:rgba(53, 52, 48, 1);
+  --bg-image: url(../images/cover-image-light.png);
+  --title-color: rgba(255, 194, 230, 1);
+  --bg-color: #fff1f7;
+  --main-text:rgba(53, 52, 48, 1);
+  --title-decor-color:rgba(53, 52, 48, 1);
+  --accent-color-bg:rgba(255, 141, 203, 1);
+  --accent-color-hover:rgba(53, 52, 48, 0.4);
 } 
 
 .page {
-    /* Вам также нужно будет написать ряд подобных селекторов */
-  background-color: #fff1f7;
+  /* Вам также нужно будет написать ряд подобных селекторов */
   background-image:var(--bg-image);
-}
 
 .record {
   display: none;
-}  
-
-.main-title {
-  color:var(--main-text);
 }
-
-.decorated-zone::after {
-  border-top: 1px solid var(--main-text);
-  border-right: 1px solid var(--main-text);
-}
-   
-.decorated-zone::before {
-  border-bottom: 1px solid var(--main-text);
-  border-left: 1px solid var(--main-text);
-}
- 
-.header__theme-menu-button {
-  color: var(--main-text);
-}
-   
-.header__theme-menu-button_active {
-  border: 1px solid var(--main-text);
-} 
-
-.header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4)
-}
-   
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--main-text);
-}
-
-a {
-  text-shadow: 2px 2px 0px var(--title-color);
-}
-   
-a:focus-visible {
-  border: 1px solid var(--main-text);
-}
-   
-a:hover {
-  border-bottom:1px solid var(--main-text);
 }
 }
