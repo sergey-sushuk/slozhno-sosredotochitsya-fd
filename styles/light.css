@@ -10,43 +10,43 @@
     чем стили в медиазапросе предпочтений пользователя
 
   */
-  --accent-color:rgba(53, 52, 48, 1);
+  --accent-color: rgba(53, 52, 48, 1);
   --bg-image: url(../images/cover-image-light.png);
   --title-color: rgba(255, 194, 230, 1);
   --bg-color: #fff1f7;
-  --main-text:rgba(53, 52, 48, 1);
-  --title-decor-color:rgba(53, 52, 48, 1);
-  --accent-color-bg:rgba(255, 141, 203, 1);
-  --accent-color-hover:rgba(53, 52, 48, 0.4);
+  --main-text: rgba(53, 52, 48, 1);
+  --title-decor-color: rgba(53, 52, 48, 1);
+  --accent-color-bg: rgba(255, 141, 203, 1);
+  --accent-color-hover: rgba(53, 52, 48, 0.4);
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image:var(--bg-image);
+  background-image: var(--bg-image);
 
-.record {
-  display: none;
-}
+  .record {
+    display: none;
+  }
 }
 
-@media(prefers-color-scheme:light) {
-:root {
-  --accent-color:rgba(53, 52, 48, 1);
-  --bg-image: url(../images/cover-image-light.png);
-  --title-color: rgba(255, 194, 230, 1);
-  --bg-color: #fff1f7;
-  --main-text:rgba(53, 52, 48, 1);
-  --title-decor-color:rgba(53, 52, 48, 1);
-  --accent-color-bg:rgba(255, 141, 203, 1);
-  --accent-color-hover:rgba(53, 52, 48, 0.4);
-} 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: rgba(53, 52, 48, 1);
+    --bg-image: url(../images/cover-image-light.png);
+    --title-color: rgba(255, 194, 230, 1);
+    --bg-color: #fff1f7;
+    --main-text: rgba(53, 52, 48, 1);
+    --title-decor-color: rgba(53, 52, 48, 1);
+    --accent-color-bg: rgba(255, 141, 203, 1);
+    --accent-color-hover: rgba(53, 52, 48, 0.4);
+  }
 
-.page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image:var(--bg-image);
+  .page {
+    /* Вам также нужно будет написать ряд подобных селекторов */
+    background-image: var(--bg-image);
 
-.record {
-  display: none;
-}
-}
+    .record {
+      display: none;
+    }
+  }
 }

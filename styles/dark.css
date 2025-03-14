@@ -5,13 +5,14 @@
 */
 
 :root.theme-dark {
- --title-color: rgba(219, 0, 255, 1);
- --accent-color: rgba(255, 0, 112, 1);
- --bg-image: url('../images/cover-image-dark.png');
- --main-text:rgba(241, 178, 206, 1);
- --bg-color:#000028;
- --accent-color-bg:#ff0070;
- --title-decor-color: rgba(0, 0, 40, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --bg-image: url("../images/cover-image-dark.png");
+  --main-text: rgba(241, 178, 206, 1);
+  --bg-color: #000028;
+  --accent-color-bg: #ff0070;
+  --title-decor-color: rgba(0, 0, 40, 1);
+  --accent-color-hover: rgb(255, 0, 112, 0.4);
 }
 
 .theme-dark .page {
@@ -19,8 +20,8 @@
   background-image: var(--bg-image);
   background-color: var(--bg-color);
 
-.record {
-  display: block;
-  position: absolute;
-}
+  .record {
+    display: block;
+    position: absolute;
+  }
 }
